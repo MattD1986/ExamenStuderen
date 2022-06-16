@@ -1,0 +1,19 @@
+<div>
+    <div *ngIf="inhoudWinkelmandje">
+        <h2>Hieronder kan je de inhoud van je winkelmandje zien</h2>
+        <ul>
+            <li class="row" *ngFor="let product of winkelmandje">
+                <div class="row col-8">
+                    <p class = col-4>{{product.name}} - {{product.price | currency : 'EUR'}}</p>
+                    <a class="col-1 btn btn-danger" (click)="delete(product)"> - </a>
+                </div>
+            </li>
+        </ul>
+
+        <H4>totaalprijs: {{totaalPrijs | currency: 'EUR' }}</H4>
+        <button class="btn btn-warning" (click)="afrekenen()" >Bevestig aankoop</button>
+    </div>
+
+    <app-product-list (teBetalenGames)="overDragenWM($event)" ></app-product-list>
+
+</div>

@@ -1,0 +1,23 @@
+[
+    {
+          "id": 1,
+          "name": "Elder Scrolls Online",
+          "price": 12.99,
+          "type": "mmo",
+          "url": "https://www.elderscrollsonline.com/en-us/home"
+    },
+    {
+          "id": 2,
+          "name": "Elden Ring",
+          "price": 45.99,
+          "type": "mmo",
+          "url": "https://en.bandainamcoent.eu/elden-ring/elden-ring"
+    },
+    {
+      "id":3,
+      "name": "Far Cry 6",
+      "price": 39.99,
+      "type": "mmo",
+      "url": "https://www.ubisoft.com/en-gb/game/far-cry/far-cry-6"
+    }
+]

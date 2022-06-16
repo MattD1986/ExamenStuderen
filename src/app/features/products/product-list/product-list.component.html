@@ -1,0 +1,20 @@
+<section>
+    <div>
+        <h2>List of our products in store:</h2>
+        <ul class="row" >
+            <li  class=" card col-3 m-1 p-2"  *ngFor="let product of lijstProducten$ |async">
+                <div class="article btn" (click)="selecteerProduct(product)" >
+                    <div>
+                        {{product.name}}
+                    </div>
+                    <div>
+                        {{product.price | currency: 'EUR'}}
+                    </div>
+                </div>    
+                <div class="mt-3">
+                    <button class="btn btn-primary" (click)="koopGames(product)">koop</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
